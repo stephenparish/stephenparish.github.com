@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'BurstMyBubbleRegular';
+    src: url('burstmybubble-webfont.eot');
+    src: url('burstmybubble-webfont.eot?#iefix') format('embedded-opentype'),
+         url('burstmybubble-webfont.woff') format('woff'),
+         url('burstmybubble-webfont.ttf') format('truetype'),
+         url('burstmybubble-webfont.svg#BurstMyBubbleRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  #container {
+    padding: 50px 0 0 0;
+  }
+  #container #header {
+    display: none;
+    float: none;
+    margin: 5px 15px 15px 0;
+    width: 238px;
+  }
+  #container #header h1 {
+    font-size: 37px;
+    line-height: 37px;
+    margin-bottom: 5px;
+  }
+  #container #header h2 {
+    font-size: 14px;
+  }
+  #container #content {
+    float: none;
+    margin: 4px 0 0 0;
+    width: 253px;
+    display:none;
+  }
+  #container #iphone-nav {
+    background: #333;
+    padding: 10px;
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    width: 300px;
+  }
+  #container #iphone-nav ul {
+    margin: 0;
+  }
+  #container #iphone-nav ul li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    padding: 0 10px 0 0;
+  }
+  #container #iphone-nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  #container #photo-roll {
+    height: 10px;
+  }
+  #container #content section {
+    height: 200px;
+    overflow:hidden;
+  }
+*/
+
+body,ul,li {
+    padding:10px;
+    margin:0;
+}
+
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+}
+
+#content-wrapper {
+    width:300px;
+    height:400px;
+
+    float:left;
+    position:relative;  /* On older OS versions "position" and "z-index" must be defined, */
+    z-index:1;          /* it seems that recent webkit is less picky and works anyway. */
+    overflow:hidden;
+
+    background:#aaa;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -o-border-radius:10px;
+    border-radius:10px;
+    background:#e3e3e3;
+}
+
+#content {
+    width:2100px;
+    height:100%;
+    float:left;
+    padding:0;
+}
+
+#content section {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    display:block; float:left;
+    width:300px; height:400px;
+    text-align:center;
+    font-family:georgia;
+    font-size:18px;
+    line-height:140%;
+}

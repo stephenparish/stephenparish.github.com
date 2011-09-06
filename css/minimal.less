@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'BurstMyBubbleRegular';
+    src: url('burstmybubble-webfont.eot');
+    src: url('burstmybubble-webfont.eot?#iefix') format('embedded-opentype'),
+         url('burstmybubble-webfont.woff') format('woff'),
+         url('burstmybubble-webfont.ttf') format('truetype'),
+         url('burstmybubble-webfont.svg#BurstMyBubbleRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #ddd;
+  color: #000;
+  font: 16px Helvetica, Sans-serif;
+}
+
+#container {
+  margin: 0 auto;
+  padding: 35px 0 0 0;
+  width: 960px;
+  header {
+    background: #fff;
+    /*-webkit-box-shadow: -10px 0px 40px -15px rgba(0, 0, 0, 1);*/
+    border-radius: 5px;
+    display: block;
+    float: right;
+    padding: 15px 0 15px 15px;
+    width: 286px;
+    margin-right: 10px;
+    h1 {
+      font-size: 52px;
+      letter-spacing: -2px;
+      line-height: 50px;
+    }
+    h2 {
+      color: #666;
+      font-size: 18px;
+      line-height: 16px;
+      padding-left: 2px;
+    }
+    ul {
+      margin: 10px 0 0 0;
+      li {
+        list-style-type: none;
+        a {
+          color: #000;
+          font-weight: bold;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  #content-seperator {
+    display: none;
+    -webkit-box-shadow: inset -7px 0px 4px -4px #000;
+    float:left;
+    height: 700px;
+    width: 10px;
+  }
+  #content {
+    float: left;
+    height: 430px;
+    margin-left: 9px;
+    overflow: hidden;
+    position: relative;
+    width: 636px; /* on older os versions "position" and "z-index" must be defined, */
+    z-index: 1; /* it semms that recent webkit is less picky and works anyway */
+    .slider {
+      float: left;
+      height: 100%;
+      width: 3180px;
+      section {
+        background: #fff;
+        border-radius: 5px;
+        display: block;
+        float: left;
+        height: 400px;
+        margin: 0 15px 0 0;
+        padding: 15px;
+        width: 591px;
+        h2 {
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+        h3 {
+          color: #666;
+          margin: 0 0 10px 0;
+        }
+        h4 {
+          color: #444;
+          font-size: 16px;
+          span {
+            color: #999;
+          }
+        }
+        p {
+          font-size: 16px;
+          line-height: 22px;
+          margin: 0 0 15px 0;
+        }
+      }
+    }
+  }
+  #photo-roll {
+    top: 0px;
+    left: 0px;
+    height: 19px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    .color {
+      width: 20px; height: 40px; float: left;
+    }
+    div {
+      -webkit-box-shadow:	inset 0px -10px 10px -5px rgba(0, 0, 0, 0.3);
+    }
+  }
+  #photo-hover {
+    background: url(data:image/gif;base64,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) no-repeat center center;
+    display: none;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    img {
+      border: 5px solid #000;
+    }
+    div.arrow {
+      margin:0 auto;
+      border-color: transparent transparent #000 transparent;
+      border-style:solid;
+      border-width:10px;
+      width:0;
+      height:0;
+    }
+  }
+}
+
+/* iphone 4 = 960x640
+ * iphone >4 = 320x480
+ div width subtracted from winidow to find margins needed per div
+ */
+
+@media handheld, screen and (max-device-width: 480px) {
+  #container {
+    header {
+      background: #333;
+      border-radius: 0px;
+      padding: 2px 0;
+      position: absolute;
+      top: 10px;
+      left: 0px;
+      width: 100%;
+      h1, h2 {
+        display: none;
+      }
+      ul#nav {
+        width: 100%;
+        li {
+          display: block;
+          float: left;
+          padding: 2px;
+          a {
+            color: #fff;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    #content {
+      margin-left: 0px;
+      top: 40px;
+      width: 320px;
+      .slider {
+        width: ;
+        section {
+          margin: 0 10px;
+          padding: 10px;
+          width: 280px;
+        }
+      }
+    }
+    #photo-roll {
+      height: 10px;
+    }
+  }
+}
+/*  #container {
+    padding: 50px 0 0 0;
+    #header {
+      float:left;
+      margin: 15px;
+      width: 260px;
+      h1 {
+        font-size: 37px;
+        line-height: 37px;
+        margin-bottom: 5px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+    }
+    #content {
+      float:right;
+      margin: 0;
+      width: 320px;
+      section {
+
+      }
+    }
+    #iphone-nav {
+      background: #333;
+      padding: 10px;
+      position: absolute;
+      top: 19px;
+      left: 0px;
+      width: 300px;
+      ul {
+        margin: 0;
+        li {
+          display: block;
+          float: left;
+          list-style-type: none;
+          padding: 0 10px 0 0;
+          a {
+            color: #fff;
+            font-weight: bold;
+            font-size: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }*/
+
+/*  body {
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+  }*/
+
+
+
+/* ========================================
+ * BUSINESS CARD
+ * -------------
+ * removes other styling
+ * has class for vertical and horizontal
+ * ======================================== */
+
+#bus-card {
+  background: #474747 url('../images/layout/bus-card-bg.png');
+  height: 272px;
+  width: 480px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  h1 {
+    font-size: 54px;
+    background: #fff;
+    padding: 5px 10px 10px 10px;
+    line-height: 54px;
+    margin: 0;
+    width: 252px;
+    height: 103px;
+    position: relative;
+    top: 77px;
+    left: -77px;
+    -webkit-transform: rotate(-90deg);
+    border-radius: 10px 10px 0 0;
+    span {
+      color: #ccc;
+      font-size: 32px;
+    }
+  }
+  .colors {
+    width: 272px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 4px;
+    left: -9px;
+    -webkit-transform: rotate(-90deg);
+    #div {
+      -webkit-box-shadow:	inset 0px -10px 10px -5px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .details {
+    position: relative;
+    top: -140px;
+    width: 320px;
+    float: right;
+    padding: 5px 10px;
+    h2 {
+      color: #111;
+      font-size: 20px;
+      letter-spacing: -1px;
+      opacity: 0.8;
+      text-shadow: 0px 1px 0px #777;
+      text-transform: uppercase;
+    }
+  }
+}
