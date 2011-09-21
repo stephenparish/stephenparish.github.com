@@ -1,0 +1,50 @@
+// add rounded corners to an item
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+.border-radius-all (@top: 5px, @right: 5px, @bottom: 5px, @left: 5px) {
+  -webkit-border-radius: @top @right @bottom @left;
+  -moz-border-radius: @top @right @bottom @left;
+  border-radius: @top @right @bottom @left;
+}
+.rotate (@deg: 90deg) {
+  -webkit-transform: rotate(@deg);	
+  -moz-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+  transform: rotate(@deg);
+}
+.gradient (@start: #92bf42, @stop: #628b1d) {
+  background: @start; /* Old browsers */
+  background: -moz-linear-gradient(top, @start 0%, @stop 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(100%,@stop)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, @start 0%,@stop 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, @start 0%,@stop 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, @start 0%,@stop 100%); /* IE10+ */
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@start', endColorstr='@stop',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, @start 0%,@stop 100%); /* W3C */
+}
+
+// shadow effects -- for 2 or fewer shadows
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @spread: 0, @color) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -o-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+.box-shadow-inset (@x: 0, @y: 0, @blur: 1px, @spread: 0, @color) {
+  box-shadow: @arguments inset;
+  -moz-box-shadow: @arguments inset;
+  -o-box-shadow: @arguments inset;
+  -webkit-box-shadow: @arguments inset;
+}
+.box-shadow-both (@x_out: 0, @y_out: 0, @blur_out: 1px, @spread_out: 0, @color_out, @x_in, @y_in, @blur_in, @spread_in, @color_in) {
+  box-shadow: @x_out @y_out @blur_out @spread_out @color_out, @x_in @y_in @blur_in @spread_in @color_in inset;
+  -moz-box-shadow: @x_out @y_out @blur_out @spread_out @color_out, @x_in @y_in @blur_in @spread_in @color_in inset;
+  -o-box-shadow: @x_out @y_out @blur_out @spread_out @color_out, @x_in @y_in @blur_in @spread_in @color_in inset;
+  -webkit-box-shadow: @x_out @y_out @blur_out @spread_out @color_out, @x_in @y_in @blur_in @spread_in @color_in inset;
+}
+
+

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px Helvetica;
+}
+body h1 {
+  color: #777;
+  text-shadow: rgba(0, 0, 0, 0.6) -1px 0, rgba(0, 0, 0, 0.4) 0 -1px, rgba(255, 255, 255, 0.3) 0 1px, rgba(0, 0, 0, 0.4) -1px -2px;
+  font-size: 6em;
+  font-family: "Lucida Grande";
+  text-transform: uppercase;
+  letter-spacing: -7px;
+}
+body #wrapper {
+  background: 0 none;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.7) inset;
+  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.7) inset;
+  -o-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.7) inset;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.7) inset;
+  padding: 10px;
+  margin: 100px auto 0 auto;
+  width: 470px;
+}
+body #wrapper #wrapper-liner {
+  border: 1px solid #fff;
+  background: #ffffff;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* Opera11.10+ */
+
+  background: -ms-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* IE10+ */
+
+  background: linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  /* W3C */
+
+  box-shadow: 0 0 0 1px #999999, -20px -20px 15px -20px #cccccc inset;
+  -moz-box-shadow: 0 0 0 1px #999999, -20px -20px 15px -20px #cccccc inset;
+  -o-box-shadow: 0 0 0 1px #999999, -20px -20px 15px -20px #cccccc inset;
+  -webkit-box-shadow: 0 0 0 1px #999999, -20px -20px 15px -20px #cccccc inset;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+}
+body #wrapper #wrapper-liner header h1 {
+  color: #fff;
+  font-size: 3.7em;
+  letter-spacing: -2px;
+  text-shadow: 0px 2px 0px #ccc;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+body #wrapper #wrapper-liner header h1 span {
+  font-size: 0.7em;
+  color: #AAA;
+  text-transform: none;
+}
