@@ -18,8 +18,8 @@ title: Wish List
 - [Star Wars Battlefront for xbone - $60](http://www.amazon.com/Star-Wars-Battlefront-Standard-Edition-Xbox/dp/B00W8FYFBU)
 
 ### > $100
-- [Desktop speakers - $250](http://www.amazon.com/gp/product/B00DQMJE7E)
-- [Stands for speakers  - $30](http://www.amazon.com/gp/product/B002ATK2OS)
 - [Griot's 6" Orbital Kit 10 ft cable - $200](http://www.griotsgarage.com/product/6+inch+orbital+boss+essentials+kit.do?sortby=ourPicks&refType=)
 - [Griot's 6" Orbital 10 ft cable - $150](http://www.griotsgarage.com/product/griots+garage+random+orbital.do?sortby=ourPicks&refType=)
 - [Nest Thermostat - $250](https://store.google.com/product/nest_learning_thermostat_3rd_gen)
+- [Desktop speakers - $250](http://www.amazon.com/gp/product/B00DQMJE7E)
+- [Stands for speakers  - $30](http://www.amazon.com/gp/product/B002ATK2OS)
