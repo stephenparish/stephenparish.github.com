@@ -6,15 +6,17 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{ts,tsx,json,md,mdx,yml,js}\""
   },
   "dependencies": {
     "deepmerge": "^4.2.2",
-    "gatsby": "^2.17.11",
-    "gatsby-theme-blog": "^1.1.17",
+    "gatsby": "^2.18.4",
+    "gatsby-theme-blog": "^1.2.3",
     "gatsby-theme-waves": "^0.1.5",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.19.1",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
