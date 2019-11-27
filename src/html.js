@@ -11,10 +11,16 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+        {process.env.NODE_ENV === 'production' && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
 ;(function() {
+  if (window.location.protocol === 'http:') {
+    window.location.replace('https://' + window.location.host + window.location.pathname);
+    return;
+  }
+
   const testKey = 'gatsby'
   if (/#gatsby/.test(window.location.hash)) {
     window.localStorage.setItem(testKey, true)
@@ -26,8 +32,9 @@ export default function HTML(props) {
   }
 })()
 `,
-          }}
-        />
+            }}
+          />
+        )}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
