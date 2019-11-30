@@ -1,18 +1,33 @@
 import merge from 'deepmerge'
 import defaultTheme from 'gatsby-theme-blog/src/gatsby-plugin-theme-ui/index'
 
-export default merge(defaultTheme, {
-  useColorSchemeMediaQuery: true,
-  colors: {
+const light = {
     text: '#1D202A',
     primary: '#587768',
     accent: '#397367',
-    modes: {
-      dark: {
+}
+
+const dark = {
         text: '#FFF',
         background: '#1D202A',
         primary: '#7EAA95',
         accent: '#42858C',
+}
+
+export default merge(defaultTheme, {
+  useColorSchemeMediaQuery: true,
+  colors: {
+    ...light,
+    modes: {
+      sepia: {
+        ...light,
+        background: '#FFFEEE',
+      },
+      dark,
+      trueBlack: {
+        ...dark,
+        text: '#DDD',
+        background: '#000',
       },
     },
   },

@@ -1,6 +1,6 @@
 import React from 'react'
 import { css, Styled, useThemeUI } from 'theme-ui'
-import Header from 'gatsby-theme-blog/src/components/header'
+import Header from './header'
 import { Helmet } from 'react-helmet'
 
 export default ({ children, ...props }) => {

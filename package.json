@@ -10,6 +10,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,json,md,mdx,yml,js}\""
   },
   "dependencies": {
+    "@theme-ui/components": "^0.2.49",
     "deepmerge": "^4.2.2",
     "gatsby": "^2.18.5",
     "gatsby-theme-blog": "^1.2.4",
