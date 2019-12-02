@@ -15,30 +15,6 @@ export default function HTML(props) {
           href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900&display=swap"
           rel="stylesheet"
         />
-        {process.env.NODE_ENV === 'production' && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-;(function() {
-  if (window.location.protocol === 'http:') {
-    window.location.replace('https://' + window.location.host + window.location.pathname);
-    return;
-  }
-
-  const testKey = 'gatsby'
-  if (/#gatsby/.test(window.location.hash)) {
-    window.localStorage.setItem(testKey, true)
-    window.history.replaceState(null, null, '.')
-  }
-
-  if (!window.localStorage.getItem(testKey)) {
-    window.location.replace('https://github.com/stephenparish')
-  }
-})()
-`,
-            }}
-          />
-        )}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
